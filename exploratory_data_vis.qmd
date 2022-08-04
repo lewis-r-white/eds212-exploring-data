@@ -1,0 +1,37 @@
+---
+title: "Day 4 Exploring Data"
+author: "Lewis White"
+format: html
+editor: visual
+---
+
+```{r}
+#| warning: false
+#| echo: false
+
+library(tidyverse)
+library(palmerpenguins)
+library(GGally) ##install.packages("GGally")
+library(skimr)
+```
+
+## Exploratory Data Viz
+
+check out your data a bit
+
+```{r}
+#| include: false
+
+#Tell me the column names
+names(penguins)
+
+#what are the dimensions
+dim(penguins)
+
+# can you show me the first 6 lines?
+head(penguins)
+
+# can you show me the last 6 lines?
+tail(penguins)
+
+```
